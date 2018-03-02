@@ -10,6 +10,7 @@
 
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -17,9 +18,88 @@
 </head>
 
 <body>
+
+  <!-- Header
+  ================================================== -->
+  <header class="header">
+
+    <!-- Logo -->
+    <h1><a href="#"><img src="search-assets/turntable.png" alt="Musicache Logo"></a>Musicache</h1>
+
+    <!-- Navigation -->
+    <nav class="header_nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+
+
+
+
+  <!-- Hero and Search
+  ================================================== -->
+  <div class="hero-search">
+
+    <h3>Search for albums from your favorite band</h3>
+
+    <form class="search" action="#">
+      <input type="text" name="search-field" placeholder="ex. Mumford and Sons">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+
+  </div>
+
+  <!-- Results
+  ================================================== -->
+  <div class="results">
+
+    <h2>Results</h2>
+
+    <section class="results-cards">
+
+      <div class="card">
+        <img src="" alt="Album Cover">
+        <div class="card-container">
+          <h4>Album Title</h4>
+          <p>Artist</p>
+        </div>
+      </div>
+
+
+    </section>
+
+    <button type="button" name="button-more">View more on Spotify</button>
+
+  </div>
+
+
+
+
+
+  <!-- Footer
+  ================================================== -->
+  <footer>
+
+    <h4>Built by Tracy Spitler for DWS2</h4>
+
+  </footer>
+
+
+
+
+
+  <!-- JavaScript
+  ================================================== -->
   <script src="js/scripts.js"></script>
 
-  <p>The only paragraph!</p>
+
+
+
 
 </body>
 </html>
