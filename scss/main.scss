@@ -1,9 +1,16 @@
-$primary-color: #1ABC9C;
+// Utilities
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/placeholders";
 
-p {
-  color: white;
-}
+// Base Styles
+@import "base/reset";
+@import "base/base";
+@import "base/typography";
 
-body {
-  background-color: $primary-color;
-}
+// Layout-specific Styles
+@import "layout/header";
+@import "layout/footer";
+
+// Component Styles
+@import "components/cards";

@@ -1,0 +1,38 @@
+// typography
+
+@font-face {
+font-family: pt-sans;
+src: url("https://typekit.com/fonts/pt-sans");
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+h2 {
+  color: $white;
+  opacity: .5;
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  float: left;
+  display: inline-block;
+  color: $white;
+  background-color: $mine-shaft;
+  padding: 1rem;
+  @include margin-lr;
+}
+
+h4 {
+  color: $buttercup;
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+
+p {
+  color: $white;
+  opacity: .5;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,31 @@
+// header
+.header{
+  background-image: linear-gradient(rgba(43,43,43,1), rgba(43,43,43,.3));
+  height: 10rem;
+}
+
+header {
+  color: $white;
+  text-align: center;
+  position: relative;
+
+  h1 {
+    float: left;
+    padding: 2.5rem 0;
+  }
+
+  nav {
+    float: right;
+
+    li{
+      display: inline-block;
+      padding: 5rem 0;
+    }
+  }
+
+  &::after {
+  	content: "";
+  	display: block;
+  	clear: both;
+  }
+}

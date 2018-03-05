@@ -1,0 +1,109 @@
+// base
+
+html {
+  font-family: $font-stack-ptcaption;
+  font-size: $font-size;
+  max-width: 1450px;
+	overflow-x: hidden;
+}
+
+header, footer, .results-cards {
+  @include margin-lr;
+}
+
+a {
+  color: $alto;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 1.4rem;
+
+  &:hover {
+    color: $white;
+  }
+
+  &.current {
+    color: $buttercup;
+  }
+}
+
+.hero-search {
+  height: 25rem;
+  background-image: url("https://images.unsplash.com/photo-1470305585628-a7d2cb18efa2?ixlib=rb-0.3.5&s=33a645a517d3125d90484869bda0da56&auto=format&fit=crop&w=1650&q=80");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+#result-h3 {
+  width: auto;
+	text-align: center;
+	margin: 3rem auto -3rem 1rem;
+	height: 7rem;
+}
+
+.results {
+  color: white;
+  background-color: $white;
+  width: 100%;
+  min-height: 35rem;
+  @include margin-lr;
+}
+
+.search {
+  @include margin-lr;
+
+  & form {
+    margin: 3rem 10rem 3rem 10rem;
+    //float: left;
+
+    & label {
+      background-color: $mine-shaft;
+      padding: 1rem;
+      color: $alto;
+    }
+
+    & input {
+      margin-top: 1rem;
+      width: 90%;
+      height: 5rem;
+      padding: 1rem;
+      background-color: $alto;
+    }
+
+    & input::placeholder {
+      font-size: 2.4rem;
+    }
+
+    & button {
+      margin-left: -3rem;
+      margin-top: -3rem;
+      background-image: url("../search-assets/search.png");
+      height: 5rem;
+      width: 5rem;
+      background-size: 4rem 4rem;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    & button:hover {
+      background-color: $buttercup;
+    }
+  }
+}
+
+#loadMore {
+	width: auto;
+	text-align: center;
+	margin: 5rem auto;
+	height: 7rem;
+
+  a {
+    position: absolute;
+    transform: translate(-50%, -50%);
+  	margin: 7rem auto;
+  	font-weight: bold;
+  	padding: 1rem 2rem;
+  	background-color: $buttercup;
+    border-radius: 3px;
+  	color: $mine-shaft;
+  }
+}
