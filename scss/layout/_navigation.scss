@@ -1,0 +1,44 @@
+// Navigation
+
+// regular links
+a {
+  color: $alto;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 1.4rem;
+
+  &:hover {
+    color: $white;
+    cursor: pointer;
+  }
+
+  &.current {
+    color: $buttercup;
+  }
+}
+
+// spotify
+.spotify-link {
+  padding: 3rem;
+  text-align: center;
+
+  @include mq(small) {
+    min-width: 250px;
+    background-color: $buttercup;
+    border-radius: 3px;
+    margin: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  & a {
+    background-color: $buttercup;
+    border-radius: 3px;
+  	color: $mine-shaft;
+    font-weight: bold;
+  }
+}
+
+// buttons
+button:hover {
+  cursor: pointer;
+}

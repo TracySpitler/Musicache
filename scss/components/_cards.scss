@@ -1,24 +1,27 @@
-// cards
+// Cards
 
 .card {
   background-color: $mine-shaft;
-  text-align: left;
-  display: inline;
-	width: 30rem;
-	height: 60%;
-	float: left;
-	padding-bottom: 2rem;
 	margin: 1rem;
+
+  @include mq(small) {
+    display: flex;
+    min-width: 300px;
+  }
 
   & img {
     padding: 0;
-    height: 30rem;
-    width: 100%;
+    height: 250px;
+    width: 250px;
+
+    @include mq(small) {
+      height: 100px;
+      width: 100px;
+    }
   }
 
   & div {
-    height: 5rem;
     line-height: 2.5rem;
-    padding-left: 1rem;
+    padding: 1rem;
   }
 }
