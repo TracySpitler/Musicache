@@ -6,7 +6,7 @@
 
   <title>Musicache</title>
   <meta name="description" content="Musicache">
-  <meta name="author" content="SitePoint">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!--<link rel="stylesheet" href="css/reset.css">-->
   <link rel="stylesheet" href="css/main.css">
@@ -19,103 +19,120 @@
 <body>
 
 
-
   <!-- Hero and Search
   ================================================== -->
-  <div class="hero-search">
+  <section class="hero-search">
 
-    <div class="header">
-      <!-- Header -->
-      <header>
+    <!-- Header -->
+    <header class="header">
 
-        <!-- Logo -->
-        <h1><a href="#"><img src="search-assets/turntable.png" alt="Musicache Logo"></a>Musicache</h1>
+      <!-- Logo -->
+      <h1><a href="#"><img src="assets/turntable.png" alt="Musicache Logo"></a>Musicache</h1>
 
-        <!-- Navigation -->
-        <nav class="header_nav">
-          <ul>
-            <li><a class="current" href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
+      <!-- Navigation -->
+      <nav>
+        <ul>
+          <li class="links"><a class="current" href="#">Home</a></li>
+          <li class="links"><a href="#">About</a></li>
+          <li class="links"><a href="#">Contact</a></li>
+          <li class="hamburger"><a href="#"><img src="assets/hamburger.png" alt="Hamburger Menu"></a></li>
+        </ul>
+      </nav>
 
-      </header>
-    </div>
+    </header>
 
-
-    <div class="search">
+    <!-- Search Field -->
+    <div id="search" class="search-container">
 
       <form class="search-form" action="#">
-        <label for="">Search for albums from your favorite band</label>
-        <input class="searchField" type="text" name="search-field" placeholder="ex. Mumford and Sons">
-        <button class="submit" type="submit"></button>
+        <label for="search-field">Search for albums from your favorite band</label><br>
+        <ul>
+          <li><input id="search-field" class="search-field" type="text" name="search-field" placeholder="ex. Mumford and Sons"></li>
+          <li><button class="submit" type="submit"></button></li>
+        </ul>
+
       </form>
     </div>
 
 
-  </div>
-
-
-  <div id="result-h3">
-    <h3>Results for Mumford and Sons</h3>
-  </div>
-  <!-- Results
-  ================================================== -->
-  <section id="result" class="results">
-
-    <div id="card" class="card">
-      <img class="card-img" src="search-assets/album.jpg" alt="Album Cover">
-      <div class="card-container">
-        <h4>Album Title</h4>
-        <p>Artist</p>
-      </div>
-    </div>
-    <div class="card">
-      <img class="card-img" src="search-assets/album.jpg" alt="Album Cover">
-      <div class="card-container">
-        <h4>Album Title</h4>
-        <p>Artist</p>
-      </div>
-    </div>
-    <div class="card">
-      <img class="card-img" src="search-assets/album.jpg" alt="Album Cover">
-      <div class="card-container">
-        <h4>Album Title</h4>
-        <p>Artist</p>
-      </div>
-    </div>
-
   </section>
 
+
+
+  <div class="searched-for">
+    <h3><span>Results for Mumford and Sons</span></h3>
+  </div>
+
+  <!-- Results
+  ================================================== -->
+  <div id="results" class="results">
+
+    <article class="card">
+      <img class="card-img" src="assets/album.jpg" alt="Album Cover">
+      <div class="card-container">
+        <h4>Album Title</h4>
+        <p>Artist</p>
+      </div>
+    </article>
+    <article class="card">
+      <img class="card-img" src="assets/album.jpg" alt="Album Cover">
+      <div class="card-container">
+        <h4>Album Title</h4>
+        <p>Artist</p>
+      </div>
+    </article>
+    <article class="card">
+      <img class="card-img" src="assets/album.jpg" alt="Album Cover">
+      <div class="card-container">
+        <h4>Album Title</h4>
+        <p>Artist</p>
+      </div>
+    </article>
+    <article class="card">
+      <img class="card-img" src="assets/album.jpg" alt="Album Cover">
+      <div class="card-container">
+        <h4>Album Title</h4>
+        <p>Artist</p>
+      </div>
+    </article>
+    <article class="card">
+      <img class="card-img" src="assets/album.jpg" alt="Album Cover">
+      <div class="card-container">
+        <h4>Album Title</h4>
+        <p>Artist</p>
+      </div>
+    </article>
+    <article class="card">
+      <img class="card-img" src="assets/album.jpg" alt="Album Cover">
+      <div class="card-container">
+        <h4>Album Title</h4>
+        <p>Artist</p>
+      </div>
+    </article>
+
+  </div>
+
   <!-- Load More -->
-  <div id="loadMore"><a href="https://www.spotify.com/us/">View more on Spotify</a></div>
+  <div class="spotify-link"><a href="https://www.spotify.com/us/">View more on Spotify</a></div>
+
 
 
   <!-- Footer
   ================================================== -->
-  <div class="footer">
-    <footer>
+  <footer class="footer">
 
-      <h2>Built by Tracy Spitler for DWS2</h2>
+    <h2>Built by Tracy Spitler for DWS2</h2>
 
-    </footer>
-  </div>
-
+  </footer>
 
 
 
   <!-- JavaScript
   ================================================== -->
   <script src="js/content.js"></script>
+  <script src="js/events.js"></script>
 
 
 
   </body>
-</html>
-
-
-
-
-</body>
 </html>
